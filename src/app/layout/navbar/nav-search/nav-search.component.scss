@@ -1,0 +1,25 @@
+.form-search {
+  border-bottom: 1px solid #d8dde6;
+  padding: 50px 15px 0;
+}
+.form-search__input {
+  border: none;
+  font-size: 24px;
+  color: #9faab6;
+  opacity: 0.7;
+  padding: 10px 0 0;
+}
+
+.form-search__input{
+  outline: none!important;
+  box-shadow: none!important;
+}
+
+.form-search__label {
+  font-size: 22px;
+}
+
+.search-icon{
+  width: 22px;
+  height: 22px;
+}

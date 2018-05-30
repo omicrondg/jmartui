@@ -1,0 +1,32 @@
+<div class="data-col">
+  <div class="data-content">
+    <div class="data-image-div">
+      <img class="data-image" [src]="getImage(data.smallPictureId)">
+    </div>
+    <div class="content-container">
+      <div class="flex-div">
+        <div class="data-icon-div">
+          <img class="data-icon" src="/assets/img/ic_calendar.png">
+        </div>
+        <div class="margin-right-10">{{data.duration}}</div>
+        <div class="data-icon-div">
+          <img class="data-icon" src="/assets/img/ic_pin.png">
+        </div>
+        <div>{{data.location}}</div>
+      </div>
+      <div class="caption">{{data.caption}}</div>
+      <div class="category">{{data.category}}</div>
+      <div class="flex-div-space-between">
+        <div class="description">{{data.description[0].paragraph}}</div>
+        <div class="provider">
+          <div>
+            <div class="logo-image-div">
+              <img class="logo-image" [src]="getImage(data.provider.pictureId)">
+            </div>
+            <button class="info-button" (click)="showDetail(data.id)">>>></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

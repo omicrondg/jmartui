@@ -1,0 +1,64 @@
+<div class="modal-body">
+  <button aria-label="Close" data-dismiss="modal" class="close close-login-dialog" type="button" (click)="cancel()">
+    x
+  </button>
+  <div class="modal-container">
+    <!--<jhi-spinner *ngIf="showSpinner"></jhi-spinner>-->
+
+    <div class="justify-content-center">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="social-buttons-div">
+            <div>
+              <button class="social-button-div facebook-btn">Login with Facebook</button>
+            </div>
+            <div>
+              <button class="social-button-div twitter-btn">Login with Twitter</button>
+            </div>
+            <div>
+              <button class="social-button-div google-button">Login with Google+</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="central-login-div">
+            <div class="central-login-line"></div>
+            <div class="central-login-or">OR</div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="login-title">Log in manually</div>
+          <form [formGroup]="loginForm">
+            <div class="form-div">
+              <div>
+                <input type="text" id="name" formControlName="username" class="account-input"
+                       placeholder="Email or username">
+                <br>
+                <span *ngIf="loginForm.controls['username'].dirty && loginForm.controls['username'].errors?.required">* Please enter your name.</span>
+              </div>
+              <div>
+                <div>
+                  <input type="password" id="password" formControlName="password" class="account-input"
+                         placeholder="Password">
+                  <br>
+                  <span *ngIf="loginForm.controls['password'].dirty && loginForm.controls['password'].errors?.required">* Please enter your password.</span>
+                </div>
+              </div>
+              <div class="login-action-div">
+                <div class="login-action">
+                  <a class="forgot-link">Forgot password</a>
+                </div>
+                <div>
+                  <button (click)="onSubmit($event)" class="login-btn"
+                          [ngClass]="{'disabled-settings-done-btn' : loginForm.invalid}"
+                          [disabled]="loginForm.invalid">Login
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

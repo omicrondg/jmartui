@@ -1,0 +1,133 @@
+
+.close-login-dialog {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  right: -30px;
+  top: -5px;
+  opacity: 1;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.modal-body {
+  text-align: center;
+  width: 1067px;
+  height: 958px;
+  padding: 35px 55px;
+
+}
+
+.close-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.apply-dialog-title{
+  font-size: 36px;
+  color: #1c436c;
+  text-align: left;
+}
+
+.apply-dialog-subtitle{
+  font-size: 24px;
+  color: #349cef;
+  text-align: left;
+}
+
+.apply-dialog-descript{
+  font-size: 24px;
+  color: #1363a2;
+  margin-top: 37px;
+  margin-bottom: 24px;
+}
+
+.apply-label{
+  font-size: 16px;
+  color: #374149;
+}
+
+.form-div{
+  padding: 24px;
+  background-color: #f6f7f9;
+  text-align: left;
+}
+
+.apply-input{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 1px solid rgba(155, 155, 155, 0.26);
+  border-radius: 3px;
+  font-size: 20px;
+  color: #1363a2;
+  padding-left: 16px;
+
+}
+
+.apply-input:focus{
+  outline: none;
+}
+
+.apply-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.apply-col{
+  width: 100%;
+  margin: 0px 12px 24px 12px;
+}
+
+.last-input-div{
+  width: 280px;
+  margin: 0px 12px;
+}
+
+.apply-textarea{
+  width: 100%;
+  height: 110px;
+  border: 1px dotted #1363a2;
+  padding-left: 16px;
+}
+
+.apply-textarea:focus{
+  outline: none;
+}
+
+.textarea-div{
+  text-align: left;
+  padding: 16px 36px;
+}
+
+.apply-btn{
+  width: 240px;
+  height: 68px;
+  font-size: 24px;
+  margin: 0px 12px;
+}
+
+.cancel-btn{
+  background: #ffffff;
+  border: 1px solid #1363a2;
+  color: #1363a2;
+}
+
+.submit-btn{
+  background: #1363a2;
+  color: #ffffff;
+  border: none;
+}
+
+.apply-btn{
+  width: 240px;
+  height: 68px;
+  background-color: #1c436c;
+  color: #ffffff;
+  font-size: 24px;
+}

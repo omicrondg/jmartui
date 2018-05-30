@@ -1,0 +1,11 @@
+<ngx-carousel
+  [inputs]="carouselOne"
+  (carouselLoad)="myfunc($event)" class="carousel">
+  <ngx-item *ngFor="let slide of sliderInfo" NgxCarouselItem>
+    <div class="slider__title">
+      <img class="slider-image" [src]="getImage(slide.pictureId)">
+    </div>
+  </ngx-item>
+  <button NgxCarouselPrev class='leftRs slide-btn left-slide-btn'>&lt;</button>
+  <button NgxCarouselNext class='rightRs slide-btn right-slide-btn'>&gt;</button>
+</ngx-carousel>

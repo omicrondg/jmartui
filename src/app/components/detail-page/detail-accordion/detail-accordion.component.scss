@@ -1,0 +1,42 @@
+.card{
+  border: 0px solid #1363a2;
+  border-bottom-width: 1px;
+  border-radius: 0px;
+}
+.card-header{
+  border: none;
+  background: transparent;
+}
+
+
+.card-header > a{
+  font-size: 24px;
+  color: #1363a2;
+}
+
+
+.card-header > a > span.closed-tab{
+  display: inherit;
+  font-weight: bold;
+
+}
+
+.card-header > a > span.opened-tab{
+  display: none;
+
+}
+
+
+.card-header.active > a > span.closed-tab{
+   display: none;
+}
+
+.card-header.active > a > span.opened-tab{
+  display: inherit;
+  font-weight: bold;
+}
+
+.card-body{
+  font-size: 16px;
+  color: #46494a;
+}

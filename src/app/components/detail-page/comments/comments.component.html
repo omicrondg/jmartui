@@ -1,0 +1,9 @@
+<div class="comment-container">
+  <div *ngFor="let comment of comments">
+    <ngb-rating class="rating" [rate]="comment?.rating"></ngb-rating>
+    <div>{{comment.caption}} </div>
+    <div>{{comment.submittedOn}}</div>
+    <div>{{comment.content}}</div>
+    <div class="comment-end"></div>
+  </div>
+</div>

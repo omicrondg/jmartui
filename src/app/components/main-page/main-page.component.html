@@ -1,0 +1,12 @@
+<app-slider></app-slider>
+<app-filtes (onChangeFilters)="onChangeFilters($event)"></app-filtes>
+<div class="data-flex">
+  <app-data *ngFor="let value of programs" [data]="value"></app-data>
+</div>
+<div *ngIf="programs">
+  <div class="user-program-title">Hey, {{account?.firstName}} the following recommendation are based on your personal profile, history and interests: </div>
+  <div class="data-flex">
+    <app-user-data *ngFor="let data of programs" [data]="data"></app-user-data>
+  </div>
+</div>
+<!-- todo: scroll trigger -->

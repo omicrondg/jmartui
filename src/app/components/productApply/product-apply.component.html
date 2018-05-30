@@ -1,0 +1,71 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <button aria-label="Close" data-dismiss="modal" class="close close-login-dialog" type="button" (click)="d()">
+    x
+  </button>
+  <div class="modal-body">
+    <div>
+      <div class="apply-dialog-title">
+
+      </div>
+      <div class="apply-dialog-subtitle"> Some info from response</div>
+    </div>
+    <div>
+      <div class="apply-dialog-descript"> Some info from response</div>
+      <form [formGroup]="applyForm">
+      <div class="form-div">
+          <div class="apply-row">
+            <div class="apply-col">
+              <label class="apply-label">First Name</label>
+              <input type="text" id="firstName" formControlName="firstName" class="apply-input">
+            </div>
+            <div class="apply-col">
+              <label class="apply-label">Last Name</label>
+              <input type="text" id="lastName" formControlName="lastName" class="apply-input">
+            </div>
+          </div>
+          <div class="apply-row">
+            <div class="apply-col">
+              <label class="apply-label">Email</label>
+              <input type="text" id="email" formControlName="email" class="apply-input">
+            </div>
+            <div class="apply-col">
+              <label class="apply-label">Confirm Email</label>
+              <input type="text" id="emailConfirm" formControlName="emailConfirm" class="apply-input">
+            </div>
+            <div class="apply-col">
+              <label class="apply-label">Phone Number</label>
+              <input type="text" id="phone" formControlName="phone" class="apply-input">
+            </div>
+          </div>
+          <div class="apply-row">
+            <div class="apply-col">
+              <label class="apply-label">Country</label>
+              <input type="text" id="country" formControlName="country" class="apply-input">
+            </div>
+            <div class="apply-col">
+              <label class="apply-label">City</label>
+              <input type="text" id="city" formControlName="city" class="apply-input">
+            </div>
+          </div>
+          <div class="last-input-div">
+            <label class="apply-label">Citizenship</label>
+            <input type="text" id="citizenship" formControlName="citizenship" class="apply-input">
+          </div>
+      </div>
+        <div class="textarea-div">
+          <label class="apply-label">What specific question do you have about this project?</label>
+          <textarea formControlName="questions" class="apply-textarea"></textarea>
+        </div>
+        <div>
+          <button class="apply-btn cancel-btn" (click)="d()">Cancel</button>
+          <button class="apply-btn submit-btn" (click)="onSubmit()">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</ng-template>
+
+
+<button class="apply-btn" (click)="open(content)">Apply Now</button>
+
+

@@ -1,0 +1,276 @@
+.row{
+  margin: 0;
+}
+
+.select-style {
+  border: 1px solid #d8dde6;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #ffffff;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+.select-style select {
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  height: 30px;
+  font-size: 18px;
+  color: #374149;
+}
+
+.select-style img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.select-style-top {
+  width: 279px;
+}
+
+.select-style-top select {
+  width: 218px;
+}
+
+.select-style-med {
+  width: 242px;
+}
+
+.select-style-med select {
+  width: 181px;
+}
+
+.select-style-bottom{
+  width: 574px;
+}
+
+.select-style-bottom select {
+  width: 513px;
+}
+
+
+.select-style select:focus {
+  outline: none;
+}
+
+.irs{
+  height: 60px;
+}
+
+.irs-min, .irs-max {
+  top:37px;
+  color: #374149;
+  font-size: 14px;
+  background: transparent;
+}
+
+.irs-line{
+  height: 6px;
+}
+
+.irs-bar,
+.irs-bar-edge {
+  background: #b3c93f;
+  height: 6px;
+}
+
+.irs-bar-edge{
+  width: 10px;
+}
+
+.irs-slider{
+  background: #ffffff;
+  width: 20px;
+  height: 20px;
+  border: 1px rgba(0, 0, 0, 0.26) solid;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  top: 18px;
+}
+
+.irs-single{
+  background: transparent;
+  top:37px;
+  color: #374149;
+  font-size: 14px;
+}
+
+.irs-single:after{
+  display: none;
+}
+
+.filters-container{
+  margin: 50px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+.arrow-icon{
+  width: 10px!important;
+  height: 6px!important;
+}
+
+.ng-select{
+  font-size: 18px;
+}
+
+.main-select .ng-control{
+  border: none;
+  width: 100px!important;
+}
+
+.mat-select{
+  width: 100px!important;
+}
+
+.ng-select .ng-control:focus{
+  outline: none;
+}
+
+.ng-select .ng-arrow-zone .ng-arrow{
+  border-color: #1c436c transparent transparent;
+}
+
+.mat-select-arrow{
+  color: #1c436c;
+}
+
+.mat-select-placeholder{
+  color: #374149!important;
+}
+
+.mat-form-field-underline{
+  height: 0px!important;
+}
+
+.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label, .mat-form-field-empty.mat-form-field-label{
+  display: none!important;
+}
+
+.ng-select .ng-control .ng-value-container .ng-placeholder{
+  color: #374149;
+}
+
+.ng-select.ng-single .ng-control .ng-value-container .ng-input{
+  color: #374149;
+}
+
+
+.main-select .ng-control .ng-value-container .ng-input,
+.main-select .ng-control .ng-value-container{
+  padding-left: 0px!important;
+}
+
+.more-filters-btn{
+  background: #1363a2;
+  width: 68px;
+  height: 68px;
+  line-height: normal;
+  box-shadow: 0 11px 17px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.more-filters-btn:focus{
+  outline: none;
+}
+
+.more-filters-btn:hover{
+  background: #01346a
+}
+
+.more-filters-btn img{
+  width: 22px;
+}
+
+.search-btn {
+  background: #349cef;
+}
+
+.search-btn:hover{
+  background: #1b8fec;
+}
+
+.more-filters-select .ng-control{
+  width: 279px!important;
+  border: 1px solid #d8dde6;
+  border-radius: 3px;
+  height: 50px!important;
+}
+
+
+.more-filters-select .ng-arrow-zone{
+  padding-right: 15px;
+}
+
+.more-filters-select .ng-control .ng-value-container {
+  padding-left: 42px;
+}
+
+.more-filters-select .ng-control .ng-value-container {
+  padding-left: 32px;
+  margin-left: 10px;
+}
+
+.more-filters-select .ng-control .ng-value-container .ng-input {
+  padding-left: 42px!important;
+}
+
+.more-filters-select .ng-control .ng-value-container .ng-input input{
+  height: 36px;
+}
+
+.small-filters .ng-control{
+  width: 242px!important;
+}
+
+.custom-select-option{
+  border-bottom: 1px solid #eceef3;
+}
+
+.popover {
+  background-color: #1c436c;
+  color: #fff!important;
+}
+
+.popover-body{
+  color: #fff!important;
+}
+
+.popover>.arrow:after {
+  border-top-color: #1c436c;
+}
+
+.popover.bs-popover-bottom .arrow::after, .popover.bs-popover-auto[x-placement^="bottom"] .arrow::after{
+  border-bottom-color: #1c436c;
+  border-top-color: #1c436c;
+}
+
+.popover-body{
+   padding: 12px 24px;
+   font-size: 13px;
+}
+
+.select-icon{
+  margin-right: 14px;
+  height: 10px;
+}
+
+.selected-values-porover{
+  margin: 12px 0px;
+}

@@ -1,0 +1,81 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-body">
+    <button aria-label="Close" data-dismiss="modal" class="close close-login-dialog" type="button" (click)="d()">
+      x
+    </button>
+    <div class="filters-row">
+      <div class="left-col">
+        <div class="select-div">
+          <app-looking (onChange)="onChange($event, 'looking')"></app-looking>
+        </div>
+        <div class="select-div">
+          <app-time-of-year (onChange)="onChange($event, 'time-of-year')"></app-time-of-year>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="select-div">
+          <app-location (onChange)="onChange($event, 'location')"></app-location>
+        </div>
+        <div class="select-div">
+          <app-frequency (onChange)="onChange($event, 'frequency')"></app-frequency>
+        </div>
+      </div>
+    </div>
+    <div class="filters-row filters-row-margin">
+      <div class="left-col">
+        <div class="select-div">
+          <app-progtam-open-to (onChange)="onChange($event, 'progtam-open-to')"></app-progtam-open-to>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="select-div">
+          <app-cause (onChange)="onChange($event, 'cause')"></app-cause>
+        </div>
+      </div>
+    </div>
+    <div class="filters-row filters-row-margin">
+      <div class="left-col-center">
+        <div class="select-div">
+          <app-education (onChange)="onChange($event, 'education')"></app-education>
+        </div>
+        <div class="select-div">
+          <app-occupation (onChange)="onChange($event, 'occupation')"></app-occupation>
+        </div>
+      </div>
+      <div class="right-col-center">
+        <div class="select-div">
+          <app-age-group (onChange)="onChange($event, 'age-group')"></app-age-group>
+        </div>
+        <div class="select-div">
+          <app-gender (onChange)="onChange($event, 'gender')"></app-gender>
+        </div>
+      </div>
+    </div>
+    <div class="filters-row">
+      <div class="cost-description">
+        <img src="/assets/img/filters/shopping-basket.png">
+        Cost</div>
+      <div class="cost-value">
+        <ion-range-slider #sliderElement
+                          type="single"
+                          min="2000"
+                          max="20000"
+                          postfix=" $"
+                          decorate_both="false"
+                          (onChange)="onChange($event, 'cost')"></ion-range-slider>
+      </div>
+    </div>
+    <div class="last-filter">
+      <app-scholarships (onChange)="onChange($event, 'scholarships')"></app-scholarships>
+    </div>
+    <div class="button-div">
+      <button type="button" class="filter-btn" (click)="setChanges('test123'); d()">Filter</button>
+    </div>
+  </div>
+</ng-template>
+
+<button class="more-filters-btn" (click)="open(content)">
+  <img src="/assets/img/filters/ic_add.png">
+</button>
+
+

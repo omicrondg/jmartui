@@ -1,0 +1,38 @@
+<div class="data-col">
+  <div class="data-content">
+    <div class="category-user">{{data.category}}</div>
+    <div class="data-image-user-div">
+      <img class="data-image-user" [src]="getImage(data.mediumPictureId)">
+    </div>
+    <div class="content-container">
+      <div class="caption-user montserrat-bold">{{data.caption}}</div>
+      <div class="flex-div-space-between">
+        <div>
+          <div class="user-recommended">Why is this recommended for you?</div>
+          <div class="description">
+            <div class="flex-div">
+              <img class="description-img" src="/assets/img/ic_like.png">
+              <div>You are interested in academics</div>
+            </div>
+            <div class="flex-div">
+              <img class="description-img" src="/assets/img/ic_like.png">
+              <div>You prefer Beer Sheva</div>
+            </div>
+            <div class="flex-div">
+              <img class="description-img" src="/assets/img/ic_like.png">
+              <div>You prefer a full year program</div>
+            </div>
+          </div>
+        </div>
+        <div class="provider">
+          <div>
+            <div class="logo-image-div">
+             <img class="logo-image" [src]="getImage(data.provider.pictureId)">
+            </div>
+            <button class="info-button" (click)="showDetail(data.id)">>>></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

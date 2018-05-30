@@ -1,0 +1,30 @@
+
+  <div class="modal-body">
+    <button aria-label="Close" data-dismiss="modal" class="close close-login-dialog" type="button" (click)="cancel()">
+      x
+    </button>
+    <div class="modal-container">
+      <!--<jhi-spinner *ngIf="showSpinner"></jhi-spinner>-->
+
+      <div class="justify-content-center">
+        <div class="join-title">Write a review</div>
+        <form [formGroup]="reviewForm">
+          <div class="join-form">
+            <div>
+              <input id="number" type="number" id="rating" formControlName="rating" class="account-input"
+                     min="0" max="10" placeholder="Rating">
+            </div>
+            <div>
+              <input type="text" id="firstName" formControlName="caption" class="account-input"
+                     placeholder="Caption">
+            </div>
+            <div>
+              <input type="text" id="lastName" formControlName="content" class="account-input"
+                     placeholder="Content">
+            </div>
+          </div>
+          <button (click)="onSubmit();" class="join-btn">Write a review</button>
+        </form>
+      </div>
+    </div>
+  </div>

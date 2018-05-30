@@ -1,0 +1,83 @@
+$primary-color: #46494a;
+$secondary-color: #349cef;
+
+
+.profile-container{
+  padding: 0px 195px 195px 195px;
+}
+
+.profile-title {
+  font-size: 42px;
+  color: $secondary-color;
+}
+
+.profile-subtitle{
+  font-size: 16px;
+  color: $primary-color;
+  margin-bottom: 72px;
+  margin-top: 29px;
+}
+
+.profile-category-title{
+  font-size: 24px;
+  color: $secondary-color;
+}
+
+.profile-category{
+  border: 0px;
+  border-top: 1px solid $secondary-color;
+  margin-top: 36px;
+  padding-top: 36px;
+}
+
+.info-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin-top: 33px;
+}
+
+.info-title{
+  font-size: 20px;
+  color: $primary-color;
+  margin-right: 36px;
+}
+
+.info-value{
+  font-size: 16px;
+  color: $primary-color;
+  margin-top: 5px;
+}
+
+.add-info-btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  border: solid 1px #db8337;
+  color: #db8337;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.add-info-btn:focus{
+  outline: none;
+}
+
+.row{
+  padding: 0;
+}
+
+.edit-info-ing{
+  width: 16px;
+  margin-right: 10px;
+}
+
+.info-description{
+  font-size: 16px;
+  color: #349cef;
+  margin-left: 16px;
+
+}

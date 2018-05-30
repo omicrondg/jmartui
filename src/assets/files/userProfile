@@ -1,0 +1,10 @@
+{
+  "firstName" : "Shai",
+  "lastName" : "Rotenberg",
+  "country" : "Italy",
+  "city" : "Rome",
+  "birthDate" : "10 May 1978",
+  "gender" : "Male",
+  "email" : "shai_r@hotmail.com",
+  "phoneNumber" : "050 - 2030998"
+}

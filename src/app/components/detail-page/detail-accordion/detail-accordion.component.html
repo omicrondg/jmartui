@@ -1,0 +1,12 @@
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0"  [closeOthers]="oneAtATime">
+  <ngb-panel *ngFor="let data of dataList?.description">
+    <ng-template ngbPanelTitle>
+      <span class="closed-tab">+</span>
+      <span class="opened-tab">-</span>
+      <span>{{data.title}}</span>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      {{data.paragraph}}
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>

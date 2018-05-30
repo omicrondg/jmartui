@@ -1,0 +1,71 @@
+<div class="basic-info-row">
+  <div class="profile-category-title basic-info-left-row montserrat-bold">
+    Basic Info
+  </div>
+  <div >
+    <div class="flex-row">
+      <div class="info-left-row usern-ame montserrat-semibold">{{useInfo?.firstName}} {{useInfo?.lastName}}</div>
+      <div class="button-div">
+        <button (click)="edit()" *ngIf="isReadMode" class="edit-btn"><img class="edit-icon" src="/assets/img/pencil.png"></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="basic-info-row">
+  <div class="basic-info-left-row">
+    <div class="basic-info-avatar-div">
+      <button class="upload-avatar-btn">
+        <img class="basic-info-avatar" src="/assets/img/ic_edit.png">
+      </button>
+      <img class="basic-info-avatar" src="/assets/img/photo.png">
+    </div>
+  </div>
+  <div>
+    <form [formGroup]="basicInfoForm">
+      <div class="flex-end">
+        <div>
+          <div class="info-row">
+            <div class="info-left-row">Lives in</div>
+            <div class="user-data">
+              <input class="user-input" type="text" formControlName="address" [ngClass]="{'disabled-input' : isReadMode}"
+                     [attr.disabled]="isReadMode?'':null">
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-left-row">Birthday</div>
+            <div class="user-data">
+              <input class="user-input" type="text" formControlName="birthDate" [ngClass]="{'disabled-input' : isReadMode}"
+                     [attr.disabled]="isReadMode?'':null">
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-left-row">Gender</div>
+            <div class="user-data">
+              <input class="user-input" type="text" formControlName="gender" [ngClass]="{'disabled-input' : isReadMode}"
+                     [attr.disabled]="isReadMode?'':null">
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-left-row">Email</div>
+            <div class="user-data">
+              <input class="user-input" type="text" formControlName="email" [ngClass]="{'disabled-input' : isReadMode}"
+                     [attr.disabled]="isReadMode?'':null">
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-left-row">Phone Number</div>
+            <div class="user-data">
+              <input class="user-input" type="text" formControlName="phoneNumber" [ngClass]="{'disabled-input' : isReadMode}"
+                     [attr.disabled]="isReadMode?'':null">
+            </div>
+          </div>
+        </div>
+        <div class="info-btn-group">
+          <button class="save-btn" (click)="save()" *ngIf="!isReadMode">Apply</button>
+          <button class="cancel-btn" (click)="cancel()" *ngIf="!isReadMode">Cancel</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

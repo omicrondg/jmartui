@@ -1,0 +1,45 @@
+app-login {
+  display: block;
+  padding-top: 60px;
+}
+
+.header__user-menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    padding: 0 25px;
+    position: relative;
+    &:first-child:after {
+      content: '';
+      background: #000000;
+      height: 40px;
+      width: 1px;
+      position: absolute;
+      right: 0;
+      top: -5px;
+    }
+  }
+  a {
+    font-size: 20px;
+    color: #374149!important;
+  }
+}
+
+.modal-body{
+  padding: 15px 40px;
+}
+
+
+.modal-dialog {
+  max-width: 710px!important;
+  height: 350px!important;
+}
+
+
+.modal-backdrop.show {
+  opacity: 0.8;
+}
+

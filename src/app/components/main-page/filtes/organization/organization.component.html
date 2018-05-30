@@ -1,0 +1,23 @@
+<div class="filter-title montserrat-medium">Organization</div>
+<div class="select-style-search">
+  <ng-template #popTemplate>
+    <div *ngIf="!values">No selected</div>
+    <div *ngIf="values">
+      <div class="selected-values-porover" *ngFor="let value of values"><img class="select-icon" src="/assets/img/shape.png">{{value}}</div>
+    </div>
+  </ng-template>
+  <mat-form-field>
+    <mat-select [popover]="popTemplate"
+                triggers="mouseenter:mouseleave"
+                placement="bottom" popover="I will hide on blur"
+                (selectionChange)="select()"
+                placeholder="All"
+                [(value)]="values"
+                multiple>
+      <mat-option class="custom-select-option" *ngIf="!isSelect" value="all">Select All</mat-option>
+      <mat-option class="custom-select-option" *ngIf="isSelect" value="all">Unselect All</mat-option>
+      <mat-option *ngFor="let value of dropdownList" [value]="value">{{value}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+

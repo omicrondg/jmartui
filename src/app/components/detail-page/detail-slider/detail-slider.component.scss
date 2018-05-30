@@ -1,0 +1,57 @@
+.overall-rating {
+  color: #b3c94e;
+  font-size: 20px;
+  text-align: center;
+}
+
+.overall-rating-value {
+  font-size: 50px;
+}
+
+.slider-image{
+  width: 100%;
+}
+
+.carousel{
+  position: relative;
+}
+
+.slide-btn:focus{
+  outline: none;
+}
+
+.slide-btn{
+  background: transparent;
+  border: none;
+  font-size: 36px;
+  color: #d8d8d8;
+  height: 60px;
+}
+
+.left-slide-btn{
+  position: absolute;
+  top:calc(50% - 30px);
+  left: 10px;
+}
+
+.right-slide-btn{
+  position: absolute;
+  top:calc(50% - 30px);
+  right: 10px;
+}
+
+.ngxcarouselPointDefault{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+}
+
+.ngxcarouselPoint > li{
+  background: #ffffff!important;
+}
+
+.ngxcarouselPoint > li.active{
+  background: #f2a665!important;
+}

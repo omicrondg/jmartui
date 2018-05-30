@@ -1,0 +1,46 @@
+<div class="modal-body">
+  <button aria-label="Close" data-dismiss="modal" class="close close-login-dialog" type="button" (click)="cancel()">
+    x
+  </button>
+  <div class="modal-container">
+    <!--<jhi-spinner *ngIf="showSpinner"></jhi-spinner>-->
+
+    <div class="justify-content-center">
+      <div class="join-title">Create Account</div>
+      <form [formGroup]="joinForm">
+        <div class="join-form">
+          <div class="join-col">
+            <input type="text" id="firstName" formControlName="firstName" class="account-input"
+                   placeholder="First Name">
+            <input type="text" id="lastName" formControlName="lastName" class="account-input"
+                   placeholder="Last Name">
+            <div class="join-form">
+              <input type="text" id="country" formControlName="country" class="account-input account-input-country"
+                     placeholder="Country">
+              <input type="text" id="city" formControlName="city"
+                     class="account-input account-input account-input-city"
+                     placeholder="City">
+            </div>
+          </div>
+          <div class="join-col">
+            <input type="text" id="email" formControlName="email" class="account-input"
+                   placeholder="Email">
+            <input type="text" id="password" formControlName="password" class="account-input"
+                   placeholder="Choose a password">
+
+            <input type="text" id="confirmPassword" formControlName="confirmPassword" class="account-input"
+                   placeholder="Confirm your password">
+
+          </div>
+        </div>
+        <button (click)="onSubmit()" class="join-btn">Create Account</button>
+      </form>
+      <div class="join-text">I already have an account?
+        <a class="join-link" (click)="login()">Log in</a>
+      </div>
+      <div class="join-terms">Clicking sign up means you have read and agreed to the
+        <a class="join-link">Terms of Use.</a>
+      </div>
+    </div>
+  </div>
+</div>

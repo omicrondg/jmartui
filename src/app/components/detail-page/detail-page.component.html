@@ -1,0 +1,71 @@
+<div class="detail-page-container">
+  <div class="flex-row-space-between">
+    <div class="flex-row">
+      <div>
+        <img [src]="getImage(programDerail?.provider.pictureId)">
+      </div>
+      <div>
+        <div class="provider-name">{{programDerail?.provider.name}}</div>
+        <div class="provider-category">{{programDerail?.category}}</div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <app-product-apply-popup [data]="result"></app-product-apply-popup>
+        <button class="provider-btn">Visit Website</button>
+      </div>
+      <div class="is-open-div">
+        <span><img class="is-open-img" *ngIf="programDerail?.isOpenForApplications" src="/assets/img/check.svg"><img class="is-open-img" *ngIf="!programDerail?.isOpenForApplications" src="/assets/img/cross.svg"> Now open for applications</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-title">
+    {{programDerail?.caption}}
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-9">
+      <app-detail-slider [sliderInfo]="programDerail?.carouselPictures"></app-detail-slider>
+
+    </div>
+    <div class="col-md-3">
+      <div class="row-col">
+        <div>
+          <div class="tag-list" *ngFor="let data of tagListArray">
+            {{data}}
+          </div>
+        </div>
+        <div class="rating-panel">
+          <div class="rating-title">
+            Overall Rating
+          </div>
+          <div class="rating-value">
+            {{programDerail?.rating}}
+          </div>
+        </div>
+        <div>
+          <button class="review-btn" (click)="createReview(programDerail?.id)">Write a review</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row margin-top-50">
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-9">
+          <app-detail-accordion [dataList]="programDerail"></app-detail-accordion>
+        </div>
+        <div class="col-md-3 padding-0">
+          <app-notes [notes]="programDerail?.properties"></app-notes>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <app-comments [comments]="programDerail?.reviews"></app-comments>
+    </div>
+
+  </div>
+</div>

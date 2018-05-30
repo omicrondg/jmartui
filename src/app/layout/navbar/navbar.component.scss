@@ -1,0 +1,49 @@
+.col-login {
+  min-width: 240px;
+  text-align: right;
+}
+
+.col-logo{
+  min-width: 140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: center;
+}
+
+.navbar-brand{
+  padding: 0px;
+}
+
+.navbar-logo{
+  height: 140px;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+.btn-dropdown{
+  background: transparent;
+  color: #1c436c;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown-navigation{
+  padding-top: 60px;
+}
+
+.container-fluid{
+  padding-left: 0px;
+}
+
+.navbar-logo-small{
+  height: 100px;
+}
+
+.back-img{
+  width: 26px;
+}

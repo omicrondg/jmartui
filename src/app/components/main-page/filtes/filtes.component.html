@@ -1,0 +1,22 @@
+<div class="filters-container">
+  <!--<div class="col-md-3">Top Rated / Featured</div>-->
+  <div>
+    <app-want-do (onChange)="onChange($event, 'want-do')"></app-want-do>
+  </div>
+  <div>
+    <app-time-frame ></app-time-frame>
+  </div>
+  <div>
+  <app-where ></app-where>
+  </div>
+  <div>
+    <app-organization></app-organization>
+  </div>
+  <div>
+    <button class="more-filters-btn search-btn">
+      <img src="/assets/img/filters/ic_search.png">
+    </button>
+    <app-join (onSet)="onAddMore($event)"></app-join>
+  </div>
+</div>
+

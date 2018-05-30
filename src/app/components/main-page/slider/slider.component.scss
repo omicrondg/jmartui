@@ -1,0 +1,62 @@
+.first-slide{
+  background: #000000 url('/assets/img/img_1.png') no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  text-align: center;
+}
+
+.second-slide{
+  background: #000000 url('/assets/img/img_2.png') no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  text-align: center;
+}
+
+.thid-slide{
+  background: #000000 url('/assets/img/img_3.png') no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  text-align: center;
+}
+
+.slider__title{
+  font-size: 55px;
+  color: #ffffff;
+  padding-top: 95px;
+}
+
+.slider__description{
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.slider__btn{
+  width: 390px;
+  height: 68px;
+  background-color: #f2a665;
+  box-shadow: 0 11px 17px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.none-display{
+  display: none!important;
+}
+
+.ngxcarouselPointDefault{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+
+}
+
+.ngxcarouselPoint > li{
+  background: #ffffff!important;
+}
+
+.ngxcarouselPoint > li.active{
+  background: #f2a665!important;
+}
+

@@ -1,0 +1,11 @@
+{
+  "firstName": "firstName",
+  "lastName": "lastName",
+  "email": "email",
+  "phone": "phone",
+  "country": "country",
+  "city": "city",
+  "citizenship": "citizenship",
+  "dob": "dob",
+  "gender": "Male"
+}

@@ -1,0 +1,51 @@
+<div class="profile-category">
+  <div class="profile-category-title montserrat-bold">
+    Personal Info & Preferences
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="info-row">
+        <div class="info-title montserrat-semibold">Occupation</div>
+        <div>
+          <button class="add-info-btn">+</button>
+        </div>
+        <div class="info-description">Add Occupation</div>
+      </div>
+      <div class="info-value" *ngFor="let occupation of personalInfo?.occupations">
+        <img class="edit-info-ing" src="/assets/img/pencil.png">{{occupation}}
+      </div>
+      <div class="info-row">
+        <div class="info-title montserrat-semibold">Causes</div>
+        <div>
+          <button class="add-info-btn">+</button>
+        </div>
+        <div class="info-description">Add Causes</div>
+      </div>
+      <div class="info-value" *ngFor="let cause of personalInfo?.causes">
+        <img class="edit-info-ing" src="/assets/img/pencil.png">{{cause}}
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="info-row">
+        <div class="info-title montserrat-semibold">Previous Activities</div>
+        <div>
+          <button class="add-info-btn">+</button>
+        </div>
+        <div class="info-description">Add Previous Activities</div>
+      </div>
+      <div class="info-value" *ngFor="let previousActivity of personalInfo?.previousActivities">
+        <img class="edit-info-ing" src="/assets/img/pencil.png">{{previousActivity}}
+      </div>
+      <div class="info-row">
+        <div class="info-title montserrat-semibold">Hobbies</div>
+        <div>
+          <button class="add-info-btn">+</button>
+        </div>
+        <div class="info-description">Add Hobbies</div>
+      </div>
+      <div class="info-value" *ngFor="let hobby of personalInfo?.hobbies">
+        <img class="edit-info-ing" src="/assets/img/pencil.png">{{hobby}}
+      </div>
+    </div>
+  </div>
+</div>

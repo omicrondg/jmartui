@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('/assets/files/Montserrat-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('/assets/files/Montserrat-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('/assets/files/Montserrat-SemiBold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('/assets/files/Montserrat-Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.montserrat-medium{
+  font-family: Montserrat-Medium;
+}
+
+.montserrat-bold{
+  font-family: Montserrat-Bold;
+}
+
+.montserrat-semibold{
+  font-family: Montserrat-SemiBold;
+}
+
+body {
+  font-family: Montserrat-Regular;
+  width: 1565px;
+  margin: 0 auto;
+}
+
+
+
+a {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.modal-content{
+  background: transparent;
+}
+
+.modal-body{
+  background: #ffffff;
+  margin: 0 auto;
+}
+

@@ -1,0 +1,49 @@
+<div class="profile-category">
+  <div class="profile-category-title montserrat-bold">
+    More Info
+  </div>
+  <div>
+    <div>
+      <div class="info-row">
+        <div class="info-title montserrat-semibold">Language</div>
+        <div>
+          <button class="add-info-btn">+</button>
+        </div>
+        <div class="info-description">Add Language</div>
+      </div>
+      <div class="info-value" *ngFor="let language of personalInfo?.languages">
+        <img class="edit-info-ing" src="/assets/img/pencil.png">{{language}}
+      </div>
+      <div class="info-row">
+        <div class="info-title montserrat-semibold">Education</div>
+        <div>
+          <button class="add-info-btn">+</button>
+        </div>
+        <div class="info-description">Add Education</div>
+      </div>
+      <div class="info-value" *ngFor="let val of personalInfo?.education">
+        <img class="edit-info-ing" src="/assets/img/pencil.png">{{val}}
+      </div>
+      <div class="info-row">
+        <div class="info-title montserrat-semibold">Citizenship</div>
+        <div>
+          <button class="add-info-btn">+</button>
+        </div>
+        <div class="info-description">Add Citizenship</div>
+      </div>
+      <div class="info-value" *ngFor="let language of personalInfo?.languages">
+        <img class="edit-info-ing" src="/assets/img/pencil.png">{{language}}
+      </div>
+      <div class="info-row">
+        <div class="info-title montserrat-semibold">Relation to Judaism</div>
+        <div>
+          <button class="add-info-btn">+</button>
+        </div>
+        <div class="info-description">Add Relation to Judaism</div>
+      </div>
+      <div class="info-value montserrat-semibold" *ngFor="let relation of personalInfo?.judaismRelation">
+        <img class="edit-info-ing" src="/assets/img/pencil.png">{{relation}}
+      </div>
+    </div>
+  </div>
+</div>

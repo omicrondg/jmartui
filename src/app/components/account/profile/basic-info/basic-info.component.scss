@@ -1,0 +1,132 @@
+.basic-info-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.basic-info-left-row {
+  width: 270px;
+}
+
+.info-row {
+  margin-top: 12px!important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: center;
+}
+
+.info-left-row {
+  width: 170px;
+  font-size: 16px;
+  color: #46494a;
+}
+
+.user-data{
+  font-size: 16px;
+  color: #349cef;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: stretch;
+}
+
+.user-name{
+  font-size: 20px;
+  color: #46494a;
+}
+
+.button-div{
+  width: 250px;
+  text-align: right;
+}
+
+.edit-icon{
+  width: 22px;
+}
+
+.edit-btn{
+  border: none;
+  background: transparent;
+}
+
+.user-input{
+  width: 220px;
+  height: 36px;
+  border: solid 1px #db8337;
+  color: #349cef;
+  padding-left: 12px;
+}
+
+.flex-end{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: center;
+}
+
+.save-btn{
+  width: 99px;
+  height: 46px;
+  background-color: #f2a665;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.cancel-btn{
+  width: 99px;
+  height: 46px;
+  border: solid 1px #f2a665;
+  font-size: 20px;
+  color: #374149;
+}
+
+.disabled-input{
+  font-size: 16px;
+  color: #349cef;
+  border: none;
+}
+
+.info-btn-group{
+  margin-left: 50px;
+}
+
+.basic-info-avatar-div{
+  width: 120px;
+  margin-top: 57px;
+  position: relative;
+}
+
+.upload-avatar-btn{
+  width: 36px;
+  height: 36px;
+  background: #f2a665;
+  border: 3px #ffffff solid;
+  border-radius: 36px;
+  position: absolute;
+  bottom: 14px;
+  right: -14px;
+}
+
+.upload-avatar-btn img{
+  width: 16px;
+
+}
+
+.basic-info-avatar{
+  width: 100%;
+}
+
+

@@ -1,0 +1,7 @@
+<div class="profile-container">
+  <div class="profile-title montserrat-bold">Profile Details</div>
+  <div class="profile-subtitle">Please fill out your profile info.<br>This information will help us match you with relevant programs.</div>
+  <app-basic-info [userProfile]="userProfile"></app-basic-info>
+  <app-personal-info [personalInfo]="userProfile?.moreInfo"></app-personal-info>
+  <app-more-info [personalInfo]="userProfile?.moreInfo"></app-more-info>
+</div>
