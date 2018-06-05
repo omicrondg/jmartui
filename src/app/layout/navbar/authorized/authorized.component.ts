@@ -14,7 +14,7 @@ export class AuthorizedComponent implements OnInit {
 
   constructor(private _loginService: LoginService,
               private _eventsService: EventsService,
-              private _rourer: Router) {
+              private _router: Router) {
   }
 
   ngOnInit() {
@@ -25,15 +25,16 @@ export class AuthorizedComponent implements OnInit {
       data => {
         this._eventsService.emit({name: 'isLogin', data: false});
         this._loginService.clearStorage();
-        this._rourer.navigate(['']);
+        this._router.navigate(['']);
       },
       error => {
+        console.log(error);
       }
     );
   }
 
   profile() {
-    this._rourer.navigate(['profile']);
+    this._router.navigate(['profile']);
   }
 
 }

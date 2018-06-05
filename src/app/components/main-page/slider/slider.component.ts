@@ -1,5 +1,6 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation, ChangeDetectorRef} from '@angular/core';
 import {NgxCarousel} from 'ngx-carousel';
+import { EventsService } from '../../../services/events.service';
 
 @Component({
   selector: 'app-slider',
@@ -9,9 +10,15 @@ import {NgxCarousel} from 'ngx-carousel';
 })
 export class SliderComponent implements OnInit {
 
+  isLogin: boolean;
   public carouselOne: NgxCarousel;
 
-  constructor() { }
+  constructor(private _eventsService: EventsService, private cdr: ChangeDetectorRef) {
+    _eventsService.listen("isLogin").subscribe(data=>{
+      this.isLogin = data.data as boolean;
+      this.cdr.detectChanges();
+     });
+   }
 
   ngOnInit() {
     this.carouselOne = {

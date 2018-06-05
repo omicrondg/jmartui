@@ -12,14 +12,14 @@ export class UserDataComponent implements OnInit {
 
   @Input() data: Program;
 
-  constructor(private _rourer: Router) {
+  constructor(private _router: Router) {
   }
 
   ngOnInit() {
   }
 
   showDetail(id) {
-    this._rourer.navigate(['/detail/' + id]);
+    this._router.navigate(['/detail/' + id]);
   }
 
   getImage(id) {

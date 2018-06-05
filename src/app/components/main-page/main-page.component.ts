@@ -18,7 +18,7 @@ import {AccountService} from '../../services/account.service';
 export class MainPageComponent implements OnInit {
 
   token: string;
-
+  isLogin: boolean;
   data: MainPageRequestResource;
 
   programs: Array<Program>;
@@ -29,6 +29,9 @@ export class MainPageComponent implements OnInit {
               private _loginService: LoginService,
               private _eventsService: EventsService,
               private _accountService: AccountService) {
+                _eventsService.listen("isLogin").subscribe(data=>{
+                 this.isLogin = data.data as boolean;
+                });
   }
 
   ngOnInit() {
@@ -37,7 +40,7 @@ export class MainPageComponent implements OnInit {
     if (this.token) {
       this.getUserProgram();
     }
-    this.gerAllProgram();
+    this.getAllProgram();
     this._eventsService.listen('isLogin').subscribe((val) => {
       if (val && val.data) {
         this.getUserProgram();
@@ -47,7 +50,7 @@ export class MainPageComponent implements OnInit {
     });
   }
 
-  gerAllProgram() {
+  getAllProgram() {
     this._programsService.getAllProgram().subscribe((programs) => {
       this.programs = programs;
     });
@@ -68,7 +71,7 @@ export class MainPageComponent implements OnInit {
     if (event[0]) {
       this.getData(event[0].value);
     } else {
-      this.gerAllProgram();
+      this.getAllProgram();
     }
   }
 

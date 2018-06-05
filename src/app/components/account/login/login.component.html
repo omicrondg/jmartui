@@ -9,7 +9,7 @@
     <div>
       <div>Password</div>
       <div>
-        <input type="text" id="password" formControlName="password" class="settings-input">
+        <input type="password" id="password" formControlName="password" class="settings-input">
         <br>
         <span *ngIf="loginForm.controls['password'].dirty && loginForm.controls['password'].errors?.required">* Please enter your password.</span>
       </div>
