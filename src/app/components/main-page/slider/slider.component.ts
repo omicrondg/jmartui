@@ -42,4 +42,7 @@ export class SliderComponent implements OnInit {
     // must use feature to all carousel
   }
 
+  public getPersonalResults(event: Event){
+    
+  }
 }
